@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right, #ff575a, #ff3);
+}
+.slider{
+    width: 50%;
+    height: 68vh;
+    border-radius: 5%;
+    background-image: url(/assets/image1.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 100px auto;
+    animation: slide 20s infinite;
+}
+@keyframes slide {
+    25%{
+        background-image: url(/assets/image2.jpg);
+    }
+    50%{
+        background-image: url(/assets/image3.jpg);
+    }
+    100%{
+        background-image: url(/assets/image1.jpg);
+    }
+}
